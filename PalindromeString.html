@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome String or Not </title>
+</head>
+<body>
+    <script>
+        let string = prompt('Enter a string:');
+        let arrayValues = string.split('');
+        let reverseArray= arrayValues.reverse();
+        let reverseString = reverseArray.join('');
+        if(string == reverseString) {
+        window.alert('Palindrome string');
+        }
+        else {
+            window.alert('Not a palindrome string');
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.h1{
+    color:red;
+}
+.h2{
+    color:black;
+    background-color:aqua;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#para1 {
+    color: whitesmoke;
+    background-color:black;
+
+}
