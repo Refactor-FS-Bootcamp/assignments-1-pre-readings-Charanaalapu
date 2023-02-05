@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SortArray</title>
+</head>
+<body>
+    <script>
+        function bubbleSort(array) {
+    var done=false;
+    while(!done) {
+      done=true;
+      for(var i=1;i< array.length;i++) {
+        if(array[i-1]>array[i]) {
+          done=false;
+          var temp=array[i-1];
+          array[i-1]=array[i];
+          array[i]=temp;
+        }
+      }
+    }
+    return array;
+  }
+  var numbers= [19,5,34,63,2,43,1,56];
+  bubbleSort(numbers);
+  console.log(numbers);
+</script>
+</body>
+</html>
